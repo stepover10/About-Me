@@ -1,23 +1,32 @@
 # FrontEnd : JavaScritp Code Pattern by ChanCode
 
 
-### Stacked locally scoped Object Literal
+### Stacked locally scoped Object Literal -  BaseCode Style
 ```
-const ProductSETcreate = (function () {
+const PRODUCTSET = (function () {
     "use strict
 
     let privateMethod = function () {
         // console.log();
     }
 
-    let AdmKeyword = {    
-        init: function () {
- 
-        }
+    let AdmKeyword = {
+        eDom: {
+            name : $("#name"),
+            nameList : $(".name-list"),
+            string: {
+                prd : '.product'
+                list : '.list'
+            }
+        },
+        
+        run: function () { 
+            this.set();
+        },     
+                
     }
-
-    AdmKeyword.init();
-
+    AdmKeyword.run();
+    
     return AdmKeyword;
 })();
 ```
