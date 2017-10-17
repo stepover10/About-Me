@@ -1,9 +1,10 @@
 # FrontEnd : JavaScritp Code Pattern by ChanCode
 
-Stacked locally scoped Object Literal
 
+
+```
 const ProductSETcreate = (function () {
-    "use strict"
+    "use strict
 
     let privateMethod = function () {
         // console.log();
@@ -19,6 +20,7 @@ const ProductSETcreate = (function () {
 
     return AdmKeyword;
 })();
+```
 
 
 
@@ -28,9 +30,14 @@ var a = '';
 // good
 let a = '';
 
+// good
 let data;
 if(true){
  data = 'obj Insert';
 }
+el.html(data);
+
+
+
 
 
