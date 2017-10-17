@@ -1,6 +1,8 @@
 # FrontEnd : JavaScritp Code Pattern by ChanCode
 
 # Stacked locally scoped Object Literal
+
+
 const ProductSETcreate = (function () {
     "use strict"
 
