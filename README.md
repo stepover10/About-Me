@@ -2,7 +2,7 @@
 
 
 > Stacked locally scoped Object Literal -  BaseCode Style
-```
+```javascript
 const PRODUCTSET = (function () {
     "use strict
 
@@ -33,7 +33,7 @@ const PRODUCTSET = (function () {
 
 
 ### Tables
-```
+```javascript
 // bad
 var a = '';
 
