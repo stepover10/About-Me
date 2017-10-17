@@ -4,7 +4,7 @@
 > Stacked locally scoped Object Literal -  BaseCode Style
 ```javascript
 const PRODUCTSET = (function () {
-    "use strict
+    "use strict"
 
     let privateMethod = function () {
         // console.log();
