@@ -23,7 +23,7 @@ const ProductSETcreate = (function () {
 ```
 
 
-
+```
 // bad
 var a = '';
 
@@ -36,7 +36,7 @@ if(true){
  data = 'obj Insert';
 }
 el.html(data);
-
+```
 
 
 
