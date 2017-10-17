@@ -1,7 +1,7 @@
 # FrontEnd : JavaScritp Code Pattern by ChanCode
 
 
-### Stacked locally scoped Object Literal -  BaseCode Style
+> Stacked locally scoped Object Literal -  BaseCode Style
 ```
 const PRODUCTSET = (function () {
     "use strict
