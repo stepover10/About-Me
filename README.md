@@ -1,6 +1,5 @@
 # FrontEnd : JavaScritp Code Pattern by ChanCode
 
-
 > Stacked locally scoped Object Literal -  BaseCode Style
 ```javascript
 const PRODUCTSET = (function () {
@@ -32,20 +31,15 @@ const PRODUCTSET = (function () {
 ```
 
 
-### Tables
+> let, const
 ```javascript
-// bad
-var a = '';
-
-// good
 let a = '';
 
-// good
-let data;
 if(true){
- data = 'obj Insert';
+let data = 'obj Insert';
+$('.class').html(data);
 }
-el.html(data);
+
 ```
 
 
