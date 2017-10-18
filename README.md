@@ -36,8 +36,8 @@ const PRODUCTSET = (function () {
 let a = '';
 
 if(true){
-let data = 'obj Insert';
-$('.class').html(data);
+    let data = 'obj Insert';
+    $('.class').html(data);
 }
 
 ```
