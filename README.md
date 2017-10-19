@@ -5,9 +5,9 @@
 const PRODUCTSET = (function () {
     "use strict"
 
-    let privateLet
+    let privateData;
     let privateMethod = function () {
-        privateLet = {
+        privateData = {
         		name : 'Butter'
         }
     }
@@ -38,7 +38,7 @@ const PRODUCTSET = (function () {
 ```
 
 
-> let, const를 사용 var은 미사용
+> let, const를 사용
 ```javascript
 let a = '';
 
@@ -50,7 +50,7 @@ if(true){
 ```
 
 
-> click Function 구분\
+> click과 Function 구분
 ```javascript
 let dataFn = function (parm1, parm2, evt) {
     // ... todo
@@ -58,3 +58,7 @@ let dataFn = function (parm1, parm2, evt) {
 
 $('#id').on('click', 'div.keyword-group-del', dataFn.bind(this, 'parm1', 'parm1'));
 ```
+
+
+
+> UIUX 코드 작성 시 Jquery Callback을 권장
