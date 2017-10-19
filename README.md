@@ -1,4 +1,4 @@
-# FrontEnd : JavaScritp Code Pattern by ChanCode
+# FrontEnd : JavaScritp & Jquery Code Pattern by ChanCode
 
 > Stacked locally scoped Object Literal - BasePattern Style
 ```javascript
@@ -50,10 +50,11 @@ if(true){
 ```
 
 
+> click Function 구분\
+```javascript
+let dataFn = function (parm1, parm2, evt) {
+    // ... todo
+}
 
-
-
-
-
-
-
+$('#id').on('click', 'div.keyword-group-del', dataFn.bind(this, 'parm1', 'parm1'));
+```
