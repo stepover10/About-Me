@@ -1,15 +1,18 @@
 # FrontEnd : JavaScritp Code Pattern by ChanCode
 
-> Stacked locally scoped Object Literal -  BaseCode Style
+> Stacked locally scoped Object Literal - BasePattern Style
 ```javascript
 const PRODUCTSET = (function () {
     "use strict"
 
+    let privateLet
     let privateMethod = function () {
-        // console.log();
+        privateLet = {
+        		name : 'Butter'
+        }
     }
 
-    let AdmKeyword = {
+    let BasePatterData = {
         eDom: {
             name : $("#name"),
             nameList : $(".name-list"),
@@ -18,20 +21,24 @@ const PRODUCTSET = (function () {
                 list : '.list'
             }
         },
+
+        method: function () {
+            this.method.prototype.getInfo = function (parms) {
+            }
+        },
         
         run: function () { 
             this.set();
-        },     
-                
+        },    
     }
-    AdmKeyword.run();
-    
-    return AdmKeyword;
+
+    BasePatterData.run();    
+    return BasePatterData;
 })();
 ```
 
 
-> let, const
+> let, const를 사용 var은 미사용
 ```javascript
 let a = '';
 
@@ -41,6 +48,11 @@ if(true){
 }
 
 ```
+
+
+
+
+
 
 
 
