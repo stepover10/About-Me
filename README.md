@@ -40,7 +40,8 @@ const PRODUCTSET = (function () {
 
 
 ```
-> 변수 선언 표기 방법
+### 변수 선언 표기 방법
+
 ```javascript
 const PRODUCTSET = "대문자로 표기";
 let camelCase = "일반변수";
@@ -50,7 +51,7 @@ let camelCase = "일반변수";
 
 
 
-> let, const를 사용
+### let, const를 사용
 ```javascript
 let a = '';
 
@@ -62,7 +63,7 @@ if(true){
 ```
 
 
-> click과 Function 구분
+### click과 Function 구분
 ```javascript
 // this === evt
 let dataFn = function (parm1, parm2, evt) {
@@ -74,7 +75,7 @@ $('#id').on('click', 'div.keyword-group-del', dataFn.bind(this, 'parm1', 'parm1'
 
 
 
-> UIUX 코드 작성 시 Jquery Callback을 권장 예) fadeIn
+### UIUX 코드 작성 시 Jquery Callback을 권장 예) fadeIn
 ```javascript
 $('el').fadeIn("step1_category_off", function () {
     sampleTestFn();
