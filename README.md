@@ -47,7 +47,7 @@ let camelCase = "일반변수";
 
 ```
 
-
+----------
 
 
 > let, const를 사용
