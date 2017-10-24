@@ -1,6 +1,6 @@
 # FrontEnd : JavaScritp & Jquery Code Pattern by ButterCode
 
-> Stacked locally scoped Object Literal - BasePattern Style
+### Stacked locally scoped Object Literal - BasePattern Style
 ```javascript
 const PRODUCTSET = (function () {
     "use strict"
