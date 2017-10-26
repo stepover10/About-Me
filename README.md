@@ -82,7 +82,6 @@ if(status){
     $("el").text("falseSampleText");
 }
 
-
 // good
 let statusText = ( status ) ? 'TrueSampleText' : 'falseSampleText';
 $("el").text("SampleText");
