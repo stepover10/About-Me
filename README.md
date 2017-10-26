@@ -1,4 +1,6 @@
-### FrontEnd : JavaScritp & Jquery Code Pattern by ButterCode
+## FrontEnd : JavaScritp & Jquery Code Pattern by ButterCode
+
+### JavaScritp & Jquery Code
 
 **Stacked locally scoped Object Literal - BasePattern Style**
 ```javascript
