@@ -2,13 +2,13 @@
 
 **Stacked locally scoped Object Literal - BasePattern Style**
 ```javascript
-const PRODUCTSET = (function () {
+const BUTTERCODE = (function () {
     "use strict"
 
     let privateData;
     let privateMethod = function () {
         privateData = {
-        		name : 'Butter'
+            name : 'Butter'
         }
     }
 
@@ -42,8 +42,8 @@ const PRODUCTSET = (function () {
 ```
 **변수 선언 표기 방법**
 ```javascript
-const PRODUCTSET = "대문자로 표기";
-let camelCase = "일반변수";
+const BUTTERCODE = "대문자로 표기"; // 상수
+let camelCase = "일반변수";         // 기본 변수
 
 ```
 
@@ -51,11 +51,11 @@ let camelCase = "일반변수";
 
 **let, const를 사용**
 ```javascript
-let a = '';
+let butter = '';
 
 if(true){
-    let data = 'obj Insert';
-    $('.class').html(data);
+    let butterData = 'obj Insert';
+    $('.class').html(butterData);
 }
 
 ```
@@ -63,8 +63,8 @@ if(true){
 
 **click과 Function 구분**
 ```javascript
-// this === evt
 let dataFn = function (parm1, parm2, evt) {
+    // this === evt
     // ... todo
 }
 
@@ -72,10 +72,44 @@ $('#id').on('click', 'div.keyword-group-del', dataFn.bind(this, 'parm1', 'parm1'
 ```
 
 
+**조건문 사용시 삼항연사자를 이용**
+```javascript
+// bad
+if(status){
+    $("el").text("TrueSampleText");
+}else{
+    $("el").text("falseSampleText");
+}
 
-**UIUX 코드 작성 시 Jquery Callback을 권장 예) fadeIn**
+
+// good
+let statusText = ( status ) ? 'TrueSampleText' : 'falseSampleText';
+$("el").text("SampleText");
+```
+
+
+
+**Ajax Data Code - ButterStyle**
+
+
+
+
+
+**Jquery UIUX Code - ButterStyle**
+
+
+
+
+**Callback을 권장 예) fadeIn()**
 ```javascript
 $('el').fadeIn("step1_category_off", function () {
     sampleTestFn();
 });
 ```
+
+*삼항 연산자를 이용한 Jquery 코드 줄이기**
+```javascript
+let statusFade = (status === true) ? 'fadeIn' : 'fadeOut'
+$(".class").[statusFade]()
+```
+
