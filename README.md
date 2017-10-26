@@ -90,16 +90,13 @@ $("el").text("SampleText");
 
 
 
-**Ajax Data Code - ButterStyle
+###Ajax Data Code - ButterStyle
 
 
 
 
 
-**Jquery UIUX Code - ButterStyle**
-
-
-
+###Jquery UIUX Code - ButterStyle**
 
 **Callback을 권장 예) fadeIn()**
 ```javascript
