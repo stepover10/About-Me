@@ -19,7 +19,7 @@ const BUTTERCODE = (function () {
             name : $("#name"),
             nameList : $(".name-list"),
             string: {
-                prd : '.product'
+                prd : '.product',
                 list : '.list'
             }
         },
@@ -27,7 +27,6 @@ const BUTTERCODE = (function () {
         method: function () {
             this.method.prototype._getInfo_ = function (parms) {
             }
-
             this.method.prototype._getInfo_();
         },
         
