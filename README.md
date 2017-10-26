@@ -41,7 +41,7 @@ const BUTTERCODE = (function () {
 
 
 ```
-+변수 선언 표기 방법
+-변수 선언 표기 방법
 ```javascript
 const BUTTERCODE = "대문자로 표기"; // 상수
 let camelCase = "일반변수";         // 기본 변수
