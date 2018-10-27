@@ -1,4 +1,4 @@
-## FrontEnd : JavaScritp & Jquery Code Pattern by ButterCode
+## FrontEnd : JavaScript & Jquery Code Pattern by ButterCode
 
 ### JavaScritp & Jquery Code
 
