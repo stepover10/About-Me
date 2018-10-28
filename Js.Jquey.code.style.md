@@ -64,12 +64,12 @@ if(true){
 
 **click과 Function 구분**
 ```javascript
-let dataFn = function (parm1, parm2, evt) {
-    // this === evt
+let codeStart = function (parm1, parm2, event) {
+    // this === event
     // ... todo
 }
 
-$('#id').on('click', 'div.keyword-group-del', dataFn.bind(this, 'parm1', 'parm1'));
+$('#id').on('click', 'div.keyword-group-del', codeStart.bind(this, 'parm1', 'parm1'));
 ```
 
 
