@@ -14,14 +14,14 @@ var COMMON = (function () {
         proto.init = function(obj) {
             this.method( obj.sends )
         }
-        
+
         proto.method = function(param) {
             alert(param)
         }
-        
+
         this.init(obj)
     }
-    
+
     return {
         BasePatterData: BasePatterData, // 카테고리 가공 공통 모듈
     }
