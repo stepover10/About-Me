@@ -1,8 +1,9 @@
 ## FrontEnd : JavaScript & Jquery3.0 Code Pattern
 ### JavaScritp & Jquery Code
+### Product SMARTSKIN Standard Pattern
 
 **Scoped Object & Function - Style**
-기본 모듈 함수 정의 방법
+# 기본 모듈 함수 정의 방법
 ```javascript
 var COMMON = (function () {
     "use strict"
@@ -32,7 +33,7 @@ var BasePatterData = new COMMON.BasePatterData({
 })
 ```
 
-**변수 선언 표기**
+**# 변수 선언 표기**
 ```javascript
 // 'name' :: '' 사용 "" 미사용
 var camelCase = "일반변수"; // 기본 변수
@@ -86,7 +87,7 @@ $("#el").text( domText );
 **each, append, html 사용 시**
 ```javascript
 // element each
-$('.list li').each(function(i,v) {
+$('.target li').each(function(i,v) {
     var that = $(this)
        ,index = i++
 
@@ -99,13 +100,16 @@ var objSample = {
   name : 'Butter'  
 }
 
-var appendHtml = ''
+var appendHtml = 'init'
 $.each(objSample, function(i,v) {
     appendHtml += '<div>' + v.name + '</div>'
 })
 
-$('#elm').append( appendHtml )
+// 변수에 삽입 정보를 삽입 후 마지막에 append or html
+$('#elm').append( appendHtml ) // or html
 ```
+
+
 
 
 
