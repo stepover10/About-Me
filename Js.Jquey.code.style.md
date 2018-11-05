@@ -2,8 +2,7 @@
 ### JavaScritp & Jquery Code
 ### Product SMARTSKIN Standard Pattern
 
-**Scoped Object & Function - Style**
-# 기본 모듈 함수 정의 방법
+> Scoped Object & Function - Styl
 ```javascript
 var COMMON = (function () {
     "use strict"
@@ -33,7 +32,7 @@ var BasePatterData = new COMMON.BasePatterData({
 })
 ```
 
-**# 변수 선언 표기**
+> 변수 선언 표기
 ```javascript
 // 'name' :: '' 사용 "" 미사용
 var camelCase = "일반변수"; // 기본 변수
