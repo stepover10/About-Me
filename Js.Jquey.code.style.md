@@ -2,7 +2,8 @@
 ### JavaScritp & Jquery Code
 ### Product SMARTSKIN Standard Pattern
 
-> Scoped Object & Function - Styl
+> **Scoped Object & Function - Style**
+
 ```javascript
 var COMMON = (function () {
     "use strict"
@@ -32,7 +33,10 @@ var BasePatterData = new COMMON.BasePatterData({
 })
 ```
 
-> 변수 선언 표기
+
+
+> **변수 선언 표기**
+
 ```javascript
 // 'name' :: '' 사용 "" 미사용
 var camelCase = "일반변수"; // 기본 변수
@@ -40,7 +44,10 @@ var $target = $('#target'); // 선택자는 앞에 $ 표기 (안붙혀도 무관
 var ACTION_STUATUS = 'ACTION_STUATUS'; // flag에 관한건 대문자로 표기
 ```
 
-**var 사용**
+
+
+> **var 사용**
+
 ```javascript
 var butter = '변수';
 
@@ -50,7 +57,7 @@ var butter = '변수-1'
 ```
 
 
-**click과 Function 구분**
+> **click과 Function 구분**
 ```javascript
 // 재 사용성을 위하여 Click과 Function을 나누어 사용
 var codeFn = function (parm1, parm2, event) {
@@ -64,13 +71,13 @@ $('#id').on('click.nameSpace', 'div.btn', codeFn.bind(this, 'parm1', 'parm1'));
 ```
 
 
-**조건 완료 결과 삽입 시**
+> **조건 완료 결과 삽입 시**
 ```javascript
 // bad
 if(false){
-    $("el").text("TrueSampleText");
+    $("#elm").text("TrueSampleText");
 }else{
-    $("el").text("falseSampleText");
+    $("#elm").text("falseSampleText");
 }
 
 // good
@@ -79,11 +86,11 @@ if(false){
     domText = 'False'
 }
 
-$("#el").text( domText );
+$("#elm").text( domText );
 ```
 
 
-**each, append, html 사용 시**
+> **each, append, html 사용 시**
 ```javascript
 // element each
 $('.target li').each(function(i,v) {
@@ -108,12 +115,18 @@ $.each(objSample, function(i,v) {
 $('#elm').append( appendHtml ) // or html
 ```
 
+> **Page Checker**
+```javascript
+if( document.location.search.indexOf('cart.html') != -1 ){
+  $('#elm').show()
+}
+```
 
 
 
 
-###Ajax Data Code - ButterStyle
-**제목입력**
+
+> **Ajax Data Code**
 ```javascript
 ```
 
@@ -122,9 +135,9 @@ $('#elm').append( appendHtml ) // or html
 
 ###Jquery UIUX Code - ButterStyle**
 
-**Callback을 권장 예) fadeIn()**
+> **Callback을 권장 예) fadeIn()**
 ```javascript
-$('el').fadeIn("step1_category_off", function () {
+$('#elm').fadeIn("step1_category_off", function () {
     sampleTestFn();
 });
 ```
