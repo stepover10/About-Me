@@ -110,15 +110,19 @@ JSONdata.map(function(v,i) {
 
 > **조건문**
 ```javascript
-let sampleData = {
-    name : 'butter',
-    sub : 'magarin'
-}
+// 조건이 3개 이하일때 if 사용
+if(true){ }
+if(true){ }else{ }
+if(true){ }else if{ }
 
-// JSON key 체크
-let JSONdata = Object.keys(sampleData)
-JSONdata.map(function(v,i) {
-   JSONdata[i].name
-   JSONdata[i].sub
-})
+
+// 조건이 3개 이상일 경우 switch문 사용
+switch (flag) {
+  case type1:      
+    break;
+  case type2:      
+    break;
+  case type3:      
+    break;    
+}
 ```
