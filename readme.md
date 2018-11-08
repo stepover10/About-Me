@@ -1,5 +1,5 @@
 ## FrontEnd : JavaScript Code Pattern
-### JavaSciprt / ES6
+### JavaScript / ES6
 
 > **변수 선언 표기 방법**
 ```javascript
@@ -16,6 +16,17 @@ const MODULE = {
     // todo..
   }
 }
+```
+
+> **비교문**
+```javascript
+// bad
+( 1 == 1 )
+( 1 != 1 )
+
+// good
+( 1 === 1 )
+( 1 !== 1 )
 ```
 
 > **Arrow 함수 사용**
@@ -125,4 +136,13 @@ switch (flag) {
   case type3:      
     break;    
 }
+```
+
+> **Attribute**
+```javascript
+// 엘리먼트 값 가져오기
+let get = elm.getAttribute( 'attributename' )
+
+// 엘리먼트 값 세팅
+let set = elm.setAttribute("class", "democlass");
 ```
