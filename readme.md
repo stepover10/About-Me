@@ -12,10 +12,3 @@ E-Mail - stepover10@gmail.com
 ![ims_main](/etc/skills.png)
 
 
-## Company
-유니드컴즈 [2014-04 ~ 2018-10]
-FrontEnd-Development / Design(UI/UX) /  팀장
-
-성전기획 [2010-03 ~ 2013-07]
-편집 디자인팀  / 대리
-
