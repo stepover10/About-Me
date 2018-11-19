@@ -1,41 +1,34 @@
+const webpack = require('webpack');
 const path = require('path');
-//const HtmlWebpackPlugin = require('html-webpack-plugin');
-//const CleanWebpackPlugin = require('clean-webpack-plugin');
-
-const
-  PATH_SOURCE = path.join(__dirname, '/src'),
-  PATH_BUILD = path.join(__dirname, '/dist');
+const PATH_SOURCE = path.join(__dirname, '/src');
+const PATH_BUILD  = path.join(__dirname, '/dist');
 
 
 module.exports = {
-
+  mode: "development",
   entry: {
-    index: PATH_SOURCE + '/index/index.jsx',
+    // vendor: ["react", "react-dom"],
+    index: PATH_SOURCE + '/header/header.js',
   },
   output: {
     path: PATH_BUILD,
     filename: '[name]/[name].js',
+    chunkFilename: '[name]/[name].chunk.js'
   },
 
   module: {
-      rules: [
-          {
-              test: /\.(js|jsx)$/,
-              use: {
-                loader: 'babel-loader',
-                options: {
-                  presets: ['@babel/preset-env']
-                }
-              },
-
-              // 제외
-              exclude: ['/node_modules']
-          },
-      ]
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      }
+    ]
   },
 
   resolve: {
-     modules: ['node_modules'],
-     extensions: ['.js', '.jsx', '.css', '.scss', '.json'],
+      modules: ['node_modules'],
+      extensions: ['.js', '.jsx', '.css', '.scss', '.json'],
   },
-};
+
+}
