@@ -31,4 +31,10 @@ module.exports = {
       extensions: ['.js', '.jsx', '.css', '.scss', '.json'],
   },
 
+  devServer: {
+    port: 8000,
+    inline: true,
+    contentBase: './'
+  }
+
 }
