@@ -13,6 +13,11 @@ E-Mail - stepover10@gmail.com
 ![ims_main](/etc/skills.png)
 
 ## 참고사이트
+> JavaScript
 - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference<br>
 - https://velopert.com<br>
 - http://youmightnotneedjquery.com<br>
+
+> Css
+- https://cssreference.io/animations/
+- http://animista.net/
