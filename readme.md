@@ -18,6 +18,15 @@ E-Mail - stepover10@gmail.com
 - https://velopert.com<br>
 - http://youmightnotneedjquery.com<br>
 
-> Css
+> CSS
 - https://cssreference.io/animations/
 - http://animista.net/
+
+> Etc
+- https://d2.naver.com/helloworld/7495331
+- https://d2.naver.com/helloworld/3259111
+
+## 읽어본 책
+- 자바스크립트를 깨우치다
+- 러닝 자바스크립트를
+- 모던웹을 JavaScript + Jquery 입문
