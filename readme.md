@@ -1,6 +1,6 @@
 ## Front-End Developer YooChanHyun
 
-디자인과 퍼블리싱 개발까지 가능한 개발자 입니다.<br>
+디자인과 퍼블리싱 개발까지 가능한 개발자 유찬현 입니다.<br>
 음악을 들으면서 개발하는것을 즐깁니다.<br>
 <br>
 새로운 코드에 대한 탐구심과 즐거움이 있으며 최신동향을 따라가려 노력합니다.<br>
@@ -11,6 +11,10 @@ E-Mail - stepover10@gmail.com
 
 ## 기술
 ![ims_main](/etc/skills.png)
+
+## 최근 관심분야
+- 프론트 단위테스트(JEST, Enzyme, Mocha)
+- rxjs, D3js
 
 ## 참고사이트
 > JavaScript
