@@ -19,9 +19,12 @@ E-Mail - stepover10@gmail.com
 - D3js (웹브라우저 상에서 동적이고 인터렉티브한 정보시각화를 구현하기 위한 자바스크립트 라이브러리)
 
 ## 참고사이트
+> React
+- https://reactjs.org<br>
+- https://velopert.com<br>
+
 > JavaScript
 - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference<br>
-- https://velopert.com<br>
 - http://youmightnotneedjquery.com<br>
 
 > CSS
