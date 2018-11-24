@@ -13,8 +13,10 @@ E-Mail - stepover10@gmail.com
 ![ims_main](/etc/skills.png)
 
 ## 최근 관심분야
-- 프론트 단위테스트(JEST, Enzyme, Mocha)
-- rxjs, D3js
+- react-router
+- Jest, Enzyme, Mocha (단위테스트)
+- rxjs (비동기 및 이벤트 기반 프로그램을 작성하기 위한 라이브러리)
+- D3js (웹브라우저 상에서 동적이고 인터렉티브한 정보시각화를 구현하기 위한 자바스크립트 라이브러리)
 
 ## 참고사이트
 > JavaScript
