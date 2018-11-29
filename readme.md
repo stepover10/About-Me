@@ -8,7 +8,7 @@
 사용자가 쉽게 쓸수있는 개발을 좋아하며 개발을 할때 UI/UX까지 고려하면서 개발을 합니다.<br>
 
 E-Mail - stepover10@gmail.com<br>
-Resume - https://github.com/stepover10/About-Me/raw/master/etc/FrontEnd_Develper_YooChanHyun.pdf
+Resume - https://github.com/stepover10/About-Me/raw/master/etc/FrontEnd_Developer_YooChanHyun.pdf
 
 
 ## 기술
