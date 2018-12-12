@@ -146,3 +146,17 @@ let get = elm.getAttribute( 'attributename' )
 // 엘리먼트 값 세팅
 let set = elm.setAttribute("class", "democlass");
 ```
+
+> **Document A tag Move**
+```javascript
+document.querySelectorAll('.scrollLink').forEach( anchor => {
+  anchor.addEventListener('click', function (event) {
+      event.preventDefault()        
+      document.getElementById( this.getAttribute('data-href') ).scrollIntoView({
+         block: 'start',  
+         behavior: 'smooth'
+      })
+  })
+})
+```
+
