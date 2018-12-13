@@ -160,3 +160,10 @@ document.querySelectorAll('.scrollLink').forEach( anchor => {
 })
 ```
 
+> **Multiple Css Style & Babel**
+```javascript
+Object.assign( element.style,{
+    display : "block",
+    opacity : "0"
+})
+```
