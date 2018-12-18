@@ -167,3 +167,17 @@ Object.assign( element.style,{
     opacity : "0"
 })
 ```
+
+
+>**Object.assign**
+```javascript
+// 객체 복사 함수
+var first = { name: "Bob" };
+var last = { lastName: "Smith" };
+
+var person = Object.assign(first, last);
+console.log(person);
+
+// Output:
+// { name: "Bob", lastName: "Smith" } 
+```
