@@ -19,6 +19,7 @@ Resume - https://github.com/stepover10/About-Me/raw/master/etc/FrontEnd_Develope
 - Jest, Enzyme, Mocha (단위테스트)
 - rxjs (비동기 및 이벤트 기반 프로그램을 작성하기 위한 라이브러리)
 - D3js (웹브라우저 상에서 동적이고 인터렉티브한 정보시각화를 구현하기 위한 자바스크립트 라이브러리)
+- ESLint 코드 통일화 익히기
 
 ## 참고사이트
 > React
