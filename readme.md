@@ -41,6 +41,9 @@ Resume - https://github.com/stepover10/About-Me/raw/master/etc/FrontEnd_Develope
 > Web Programing
 - https://codeflow.study/web-deprecated/overview
 
+> Front Dev 
+- https://seokjun.kim/front-end-dev-stack-2017/
+
 ## 읽어본 책
 - 자바스크립트를 깨우치다
 - 러닝 자바스크립트를
