@@ -23,6 +23,7 @@ Resume - https://github.com/stepover10/About-Me/raw/master/etc/FrontEnd_Develope
 
 ## 참고사이트
 > React
+- https://reactjs-kr.firebaseapp.com/docs/typechecking-with-proptypes.html<br>
 - https://reactjs.org<br>
 - https://velopert.com<br>
 
