@@ -171,7 +171,7 @@ Object.assign( element.style,{
 
 >**Object.assign**
 ```javascript
-// 객체 복사 함수
+// 객체 복사 또는 병합 함수
 var first = { name: "Bob" };
 var last = { lastName: "Smith" };
 
