@@ -8,6 +8,28 @@
 - dumb component 경우 defaultProps를 필수적으로 선언
 ```
 
+> **index.js**
+: 최산당 부모에다가 스토어를 연결
+```javascript
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Header from './components/Header'
+
+import { createStore } from 'redux'
+import reducers from './store/reducers'
+import { Provider } from 'react-redux'
+
+const store = createStore(reducers);
+
+ReactDOM.render(
+    <Provider store={store}>
+        <Header />
+    </Provider>,
+    document.getElementById('Header')
+)
+```
+
+
 > **mapDispatchToProps**
 : Action를 보내는 역할
 ```javascript
@@ -41,7 +63,7 @@ export default ReChecker1
 
 
 > **mapStateToProps**
-: Action이 이루어진 Data를 받는 역할
+: Action를 받는 역할
 ```javascript
 import React, { Component } from 'react';
 import {connect} from "react-redux";
