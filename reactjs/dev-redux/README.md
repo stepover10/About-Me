@@ -8,10 +8,44 @@
 - dumb component 경우 defaultProps를 필수적으로 선언
 ```
 
+> **mapDispatchToProps**
+: Action를 보내는 역할
+```javascript
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { userAction } from '../store/actions'
+
+class ReChecker1 extends Component{
+    reduxTestFun(){
+        this.props.userAction('전달성공')
+    }
+
+    render(){
+        return(
+            <div onClick={this.reduxTestFun.bind(this)}>
+                ReChecker1
+            </div>
+        )
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        userAction: (a,b) => dispatch( userAction(a,b) ),
+    }
+}
+
+ReChecker1 = connect(undefined, mapDispatchToProps)(ReChecker1);
+export default ReChecker1
+```
+
 
 > **mapStateToProps**
 : Action이 이루어진 Data를 받는 역할
 ```javascript
+import React, { Component } from 'react';
+import {connect} from "react-redux";
+
 /* props 전달받을 Component에 연결 함수 */
 class ReChecker2 extends Component{
     render(){
