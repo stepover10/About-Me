@@ -181,3 +181,35 @@ console.log(person);
 // Output:
 // { name: "Bob", lastName: "Smith" } 
 ```
+
+
+>**fetch.api**
+```javascript
+let params = {
+    ims_domain_idx: CURRENT_USER.domain_idx,
+    filter: {
+        status: 'active'
+    },
+    limit:5
+}
+
+let result = '';
+for (let paramKey in params) {
+    if (params.hasOwnProperty(paramKey)) {
+        result += `${paramKey}=${encodeURIComponent(JSON.stringify(params[paramKey]))}&`;
+    }
+}
+
+fetch("http://test.api.uneedcomms.com/ims/v2/ims_workflows?" + result, {
+    method: "GET",
+    headers: new Headers({
+        // 'Accept': 'application/json',
+        // 'Content-Type': 'application/json',
+        'Authorization': CURRENT_USER.access_token
+    }),
+}).then((res) => {
+    console.log( 'Fetch -- ', res.json() )
+}, (err) => {
+    console.log( 'err -- ', err )
+})
+```
