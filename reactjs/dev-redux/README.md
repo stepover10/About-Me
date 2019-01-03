@@ -135,5 +135,4 @@ export default ReChecker2
 ```
 
 >> **흐름**
-> #### iMs MAIN PAGE
-![ims_main](/img/reduxMap.png)
+![redux](img/reduxMap.png)
