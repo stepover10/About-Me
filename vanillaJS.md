@@ -183,7 +183,7 @@ console.log(person);
 ```
 
 
->**fetch.api**
+> **fetch.api**
 ```javascript
 let params = {
     ims_domain_idx: CURRENT_USER.domain_idx,
@@ -211,5 +211,14 @@ fetch("http://test.api.uneedcomms.com/ims/v2/ims_workflows?" + result, {
     console.log( 'Fetch -- ', res.json() )
 }, (err) => {
     console.log( 'err -- ', err )
+})
+```
+
+> **async/await**
+```javascript
+;(async () =>{
+  // await function (){}
+})().then(() =>{
+  // asycn 완료후 
 })
 ```
