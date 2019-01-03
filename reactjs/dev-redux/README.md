@@ -29,6 +29,47 @@ ReactDOM.render(
 )
 ```
 
+> **Acrion.js**
+```javascript
+export function userData(params) {
+    return {
+        action: 'USER_DATA',
+        type: params
+    };
+}
+
+export function userAction(params) {
+    return {
+        action: 'USER_ACTION',
+        type: params
+    };
+}
+```
+
+> **Reducer.js**
+```javascript
+import { combineReducers } from 'redux'
+
+const reduxDataProps = (state=[], action) =>{
+    if( 'USER_DATA' === action.action ){
+        return Object.assign({}, state, {
+            userStatus: action.type
+        })
+    }
+
+    if( 'USER_ACTION' === action.action ){
+        return Object.assign({}, state, {
+            userAction: action.type
+        });
+    }
+
+    return state
+}
+
+const campaignStepApp = combineReducers({ reduxDataProps })
+export default campaignStepApp
+```
+
 
 > **mapDispatchToProps**
 : Action를 보내는 역할
