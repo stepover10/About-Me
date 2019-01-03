@@ -3,13 +3,15 @@ import { connect } from 'react-redux';
 import { userAction } from '../store/actions'
 
 class ReChecker1 extends Component{
-    reduxTestFun(){
+
+    reduxTestFun(i){
+        console.log(i)
         this.props.userAction('전달성공')
     }
 
     render(){
         return(
-            <div onClick={this.reduxTestFun.bind(this)}>
+            <div onClick={ ()=>this.reduxTestFun('전달') }>
                 ReChecker1
             </div>
         )
