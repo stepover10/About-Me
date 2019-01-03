@@ -134,5 +134,6 @@ ReChecker2 = connect(mapStateToProps)(ReChecker2);
 export default ReChecker2
 ```
 
->> **흐름**
+> **흐름**
+
 ![redux](img/reduxMap.png)
