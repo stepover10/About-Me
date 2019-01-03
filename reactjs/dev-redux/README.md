@@ -10,9 +10,9 @@
 
 
 > **mapStateToProps**
+: Action이 이루어진 Data를 받는 역할
 ```javascript
 /* props 전달받을 Component에 연결 함수 */
-
 class ReChecker2 extends Component{
     render(){
         return(
