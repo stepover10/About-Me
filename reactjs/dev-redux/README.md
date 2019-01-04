@@ -9,7 +9,7 @@
 ```
 
 > **index.js**
-: 최산당 부모에다가 스토어를 연결
+: 최상단 부모에다가 스토어를 연결
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
