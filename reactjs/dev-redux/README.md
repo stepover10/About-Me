@@ -8,7 +8,7 @@
 - dumb component 경우 defaultProps를 필수적으로 선언
 ```
 
-> **index.js**
+> **server.js**
 : 최상단 부모에다가 스토어를 연결
 ```javascript
 import React from 'react'

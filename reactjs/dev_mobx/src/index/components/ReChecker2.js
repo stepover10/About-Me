@@ -8,9 +8,6 @@ import { observer, inject } from 'mobx-react';
 
     static defaultProps = {
         result: 'ii',
-        store : {
-            increase : 'init',
-        }
     }
 
     render(){

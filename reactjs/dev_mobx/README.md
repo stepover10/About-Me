@@ -8,7 +8,7 @@
 - 스토어를 개별적으로 관리하기가 더 좋다
 ```
 
-> **index.js**
+> **server.js**
 : 최상단 부모에다가 스토어를 연결
 ```javascript
 import React from 'react'

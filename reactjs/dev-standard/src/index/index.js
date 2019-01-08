@@ -1,8 +1,10 @@
 import './index.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Root from 'root/root'
-// import registerServiceWorker from 'registerServiceWorker/registerServiceWorker'
+import HeaderMenu from './components/HeaderMenu'
 
-ReactDOM.render(<Root />, document.getElementById('root'))
-// registerServiceWorker();
+ReactDOM.render(
+    <HeaderMenu init={'테스트값'} />,
+    document.getElementById('root')
+)
+

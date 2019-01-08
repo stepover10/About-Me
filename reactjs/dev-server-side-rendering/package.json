@@ -5,31 +5,41 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "next": "next",
-    "dev": "webpack-dev-server --config webpack.config.js --mode=development",
+    "dev": "nodemon --exec babel-node server/server.js",
     "watch": "webpack --watch --mode=development",
     "build": "webpack --mode=production"
   },
   "dependencies": {
-    "koa": "^2.6.2",
+    "express": "^4.16.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",
+    "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.1.5",
     "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.10.0",
+    "nodemon": "^1.18.9",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.5.0",
+    "webpack-hot-middleware": "^2.24.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "author": "",
   "license": "ISC"

@@ -8,14 +8,13 @@ const PATH_BUILD  = path.join(__dirname, '/dist');
 
 module.exports = (env, argv) => {
 
-  const isBuild = argv.mode === 'production'
-
-  return({
-    devtool: 'inline-source-map',
-
+  const isDev = argv.mode === 'development'
+  const Config = {
     entry: {
       // vendor: ["react", "react-dom"],
-      header: PATH_SOURCE + '/header/header.js',
+      index  : PATH_SOURCE + '/index/server.js',
+      root   : PATH_SOURCE + '/root/root.js',
+      layout : PATH_SOURCE + '/shared/layout.js',
     },
     module: {
       rules: [
@@ -38,14 +37,11 @@ module.exports = (env, argv) => {
               MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
-                options: {
-                  sourceMap: true,
-                }
-              },{
+                options: { sourceMap: isDev ? true : false },
+              },
+              {
                 loader: 'sass-loader',
-                options: {
-                  sourceMap: true
-                }
+                options: { sourceMap: isDev ? true : false },
               }
           ],
         }
@@ -58,24 +54,31 @@ module.exports = (env, argv) => {
       // chunkFilename: '[name]/[name].chunk.js'
     },
 
-    plugins: [
-        new MiniCssExtractPlugin({
-            filename: '[name]/[name].css'
-        }),
-        isBuild ? new OptimizeCSSAssetsPlugin({}) : 'dev'
-    ],
-
     resolve: {
-        modules: ['node_modules'],
+        modules: [path.join(__dirname, 'src'), 'node_modules'],
         extensions: ['.js', '.jsx', '.css', '.scss', '.json'],
     },
 
-    devServer: {
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name]/[name].css'
+        })
+    ],
+  }
+
+  if( isDev ){
+    Config.devtool = 'inline-source-map'
+    Config.devServer = {
       port: 8000,
       inline: true,
       // hot: true,
+      historyApiFallback: true,
       publicPath: '/dist/',
       contentBase: './'
     }
-  })
+  }else{
+    Config.plugins.push( new OptimizeCSSAssetsPlugin({}) )
+  }
+
+  return Config
 }
