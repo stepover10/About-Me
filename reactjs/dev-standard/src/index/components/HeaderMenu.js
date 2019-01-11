@@ -1,23 +1,36 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class HeaderMenu extends Component{
+/*const HeaderMenu = ({init}) => {
+
+    const sayHi = (params) => {
+        console.log('send', params)
+    }
+
+    return(
+        <div onClick={ sayHi('status') }>
+            {init}
+        </div>
+    )
+
+}*/
+
+
+export default class HeaderMenu extends React.Component{
+
     state = {
         init : this.props.init
     }
 
-    /*
-    shouldComponentUpdate(nextProps, nextState, nextContext) {}
-    componentDidMount() {}
-    componentWillReceiveProps(nextProps) {}
-    componentDidUpdate() {}
-    componentWillUnmount() {}
-    */
+    sayHi = (param) => (event) => {
+       console.log(param, event)
+    }
 
-    render(){
+    render() {
         return(
-            <div>
-                {this.props.init}
-            </div>
+          <div onClick={ this.sayHi('status') }>
+            {this.props.init}
+          </div>
         )
     }
+
 }

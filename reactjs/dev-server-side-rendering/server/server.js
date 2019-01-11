@@ -1,38 +1,47 @@
 import express from "express";
 import path from "path";
 
-import React from "react";
-import { renderToString } from "react-dom/server";
-import Layout from "../src/Layout";
+import React from 'react'
+import {renderToString} from "react-dom/server";
+import {StaticRouter} from 'react-router-dom';
+
+import Layout from "../src/main/Layout";
 
 const app = express();
 
-app.use( express.static( path.resolve( __dirname, "../dist" ) ) );
 
-app.get( "/*", ( req, res ) => {
-    const jsx = ( <Layout /> );
-    const reactDom = renderToString( jsx );
+// todo app SSR setting START :: ==============
+app.use(express.static("src "));
+app.get("*", (req, res) => {
 
-    res.writeHead( 200, { "Content-Type": "text/html" } );
-    res.end( htmlTemplate( reactDom ) );
+  const context = {};
+  const reactHeaderComponent = renderToString(
+      <StaticRouter location={req.url} context={context}>
+        <Layout/>
+      </StaticRouter>
+  );
+
+  res.writeHead(200, {"Content-Type": "text/html"});
+  res.end(
+    `<!DOCTYPE html>
+    <html>
+      <head>
+        <title>SSR PROJECT</title>
+        <meta charset="utf-8" />
+      </head>
+      <body>
+        <div>React SSR</div>
+         ${reactHeaderComponent}
+      </body>
+    </html>`
+  )
+
+});
+// todo app SSR setting END :: ================
+
+
+app.listen(8080, () => {
+  console.log('Running on http://localhost:8080/');
 });
 
-app.listen( 2048 );
 
-
-function htmlTemplate( reactDom ) {
-    return `
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="utf-8">
-            <title>React SSR</title>
-        </head>
-        
-        <body>
-            <div id="app">${ reactDom }</div>
-            <!--<script src="./app.bundle.js"></script>-->
-        </body>
-        </html>
-    `;
-}
