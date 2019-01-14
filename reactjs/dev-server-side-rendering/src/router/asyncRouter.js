@@ -1,9 +1,12 @@
-/*
 import asyncComponent from './asyncComponent';
 
-const Home = asyncComponent(() => import('../components/Home'));
-const Signup = asyncComponent(() => import('../components/Signup'));
-const Join = asyncComponent(() => import('../components/Join'));
+const Home = asyncComponent(() => {
+    return import('../pages/home/Home');
+});
 
-export {Join, Signup, Home}
-*/
+const About = asyncComponent(() => {
+    return import('../pages/about/About');
+});
+
+export { Home, About }
+

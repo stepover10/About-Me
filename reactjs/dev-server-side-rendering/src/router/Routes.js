@@ -1,6 +1,27 @@
-import loadable from 'loadable-components'
+import React from 'react';
+import Loadable from 'react-loadable';
 
-const Home = loadable(() => import('../pages/home/Home'))
-const About = loadable(() => import('../pages/about/About'))
+const loading = () => <div>Loading...</div>;
 
-export {Home, About}
+
+const Countries = Loadable({
+  loader: () => import('../pages/home/Home'),
+  loading,
+});
+
+const Country = Loadable({
+  loader: () => import('../pages/about/About'),
+  loading
+});
+
+export default [
+  {
+    component: Countries,
+    path: '/',
+    exact: true
+  },
+  {
+    component: Country,
+    path: '/:name'
+  }
+];

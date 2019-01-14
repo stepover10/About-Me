@@ -1,0 +1,810 @@
+{
+  "../line/home/Home": [
+    {
+      "id": "./src/line/home/Home.js",
+      "name": "./src/line/home/Home.js",
+      "file": "0/0.chunk.js",
+      "publicPath": "0/0.chunk.js"
+    }
+  ],
+  "./DOMUtils": [
+    {
+      "id": "./node_modules/history/es/DOMUtils.js",
+      "name": "./node_modules/history/es/DOMUtils.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/history/es/DOMUtils.js",
+      "name": "./node_modules/history/es/DOMUtils.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./LocationUtils": [
+    {
+      "id": "./node_modules/history/es/LocationUtils.js",
+      "name": "./node_modules/history/es/LocationUtils.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/history/es/LocationUtils.js",
+      "name": "./node_modules/history/es/LocationUtils.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./PathUtils": [
+    {
+      "id": "./node_modules/history/es/PathUtils.js",
+      "name": "./node_modules/history/es/PathUtils.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/history/es/PathUtils.js",
+      "name": "./node_modules/history/es/PathUtils.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./createBrowserHistory": [
+    {
+      "id": "./node_modules/history/es/createBrowserHistory.js",
+      "name": "./node_modules/history/es/createBrowserHistory.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/history/es/createBrowserHistory.js",
+      "name": "./node_modules/history/es/createBrowserHistory.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./createHashHistory": [
+    {
+      "id": "./node_modules/history/es/createHashHistory.js",
+      "name": "./node_modules/history/es/createHashHistory.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/history/es/createHashHistory.js",
+      "name": "./node_modules/history/es/createHashHistory.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./createMemoryHistory": [
+    {
+      "id": "./node_modules/history/es/createMemoryHistory.js",
+      "name": "./node_modules/history/es/createMemoryHistory.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/history/es/createMemoryHistory.js",
+      "name": "./node_modules/history/es/createMemoryHistory.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./createTransitionManager": [
+    {
+      "id": "./node_modules/history/es/createTransitionManager.js",
+      "name": "./node_modules/history/es/createTransitionManager.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/history/es/createTransitionManager.js",
+      "name": "./node_modules/history/es/createTransitionManager.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "history": [
+    {
+      "id": "./node_modules/history/es/index.js",
+      "name": "./node_modules/history/es/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/history/es/index.js",
+      "name": "./node_modules/history/es/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "warning": [
+    {
+      "id": "./node_modules/history/node_modules/warning/browser.js",
+      "name": "./node_modules/history/node_modules/warning/browser.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/warning/warning.js",
+      "name": "./node_modules/warning/warning.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/history/node_modules/warning/browser.js",
+      "name": "./node_modules/history/node_modules/warning/browser.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    },
+    {
+      "id": "./node_modules/warning/warning.js",
+      "name": "./node_modules/warning/warning.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "hoist-non-react-statics": [
+    {
+      "id": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "name": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "name": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "invariant": [
+    {
+      "id": "./node_modules/invariant/browser.js",
+      "name": "./node_modules/invariant/browser.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/invariant/browser.js",
+      "name": "./node_modules/invariant/browser.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "object-assign": [
+    {
+      "id": "./node_modules/object-assign/index.js",
+      "name": "./node_modules/object-assign/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/object-assign/index.js",
+      "name": "./node_modules/object-assign/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "path-to-regexp": [
+    {
+      "id": "./node_modules/path-to-regexp/index.js",
+      "name": "./node_modules/path-to-regexp/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/path-to-regexp/index.js",
+      "name": "./node_modules/path-to-regexp/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "isarray": [
+    {
+      "id": "./node_modules/path-to-regexp/node_modules/isarray/index.js",
+      "name": "./node_modules/path-to-regexp/node_modules/isarray/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/path-to-regexp/node_modules/isarray/index.js",
+      "name": "./node_modules/path-to-regexp/node_modules/isarray/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "prop-types/checkPropTypes": [
+    {
+      "id": "./node_modules/prop-types/checkPropTypes.js",
+      "name": "./node_modules/prop-types/checkPropTypes.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/prop-types/checkPropTypes.js",
+      "name": "./node_modules/prop-types/checkPropTypes.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./factoryWithTypeCheckers": [
+    {
+      "id": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "name": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "name": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "prop-types": [
+    {
+      "id": "./node_modules/prop-types/index.js",
+      "name": "./node_modules/prop-types/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/prop-types/index.js",
+      "name": "./node_modules/prop-types/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./lib/ReactPropTypesSecret": [
+    {
+      "id": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./cjs/react-dom.development.js": [
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-dom": [
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-loadable": [
+    {
+      "id": "./node_modules/react-loadable/lib/index.js",
+      "name": "./node_modules/react-loadable/lib/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    }
+  ],
+  "./BrowserRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "name": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "name": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./HashRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/HashRouter.js",
+      "name": "./node_modules/react-router-dom/es/HashRouter.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/HashRouter.js",
+      "name": "./node_modules/react-router-dom/es/HashRouter.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./Link": [
+    {
+      "id": "./node_modules/react-router-dom/es/Link.js",
+      "name": "./node_modules/react-router-dom/es/Link.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/Link.js",
+      "name": "./node_modules/react-router-dom/es/Link.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./MemoryRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/MemoryRouter.js",
+      "name": "./node_modules/react-router-dom/es/MemoryRouter.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/MemoryRouter.js",
+      "name": "./node_modules/react-router-dom/es/MemoryRouter.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./NavLink": [
+    {
+      "id": "./node_modules/react-router-dom/es/NavLink.js",
+      "name": "./node_modules/react-router-dom/es/NavLink.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/NavLink.js",
+      "name": "./node_modules/react-router-dom/es/NavLink.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./Prompt": [
+    {
+      "id": "./node_modules/react-router-dom/es/Prompt.js",
+      "name": "./node_modules/react-router-dom/es/Prompt.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/Prompt.js",
+      "name": "./node_modules/react-router-dom/es/Prompt.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./Redirect": [
+    {
+      "id": "./node_modules/react-router-dom/es/Redirect.js",
+      "name": "./node_modules/react-router-dom/es/Redirect.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/Redirect.js",
+      "name": "./node_modules/react-router-dom/es/Redirect.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./Route": [
+    {
+      "id": "./node_modules/react-router-dom/es/Route.js",
+      "name": "./node_modules/react-router-dom/es/Route.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/Route.js",
+      "name": "./node_modules/react-router-dom/es/Route.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./Router": [
+    {
+      "id": "./node_modules/react-router-dom/es/Router.js",
+      "name": "./node_modules/react-router-dom/es/Router.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/Router.js",
+      "name": "./node_modules/react-router-dom/es/Router.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./StaticRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/StaticRouter.js",
+      "name": "./node_modules/react-router-dom/es/StaticRouter.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/StaticRouter.js",
+      "name": "./node_modules/react-router-dom/es/StaticRouter.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./Switch": [
+    {
+      "id": "./node_modules/react-router-dom/es/Switch.js",
+      "name": "./node_modules/react-router-dom/es/Switch.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/Switch.js",
+      "name": "./node_modules/react-router-dom/es/Switch.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./generatePath": [
+    {
+      "id": "./node_modules/react-router-dom/es/generatePath.js",
+      "name": "./node_modules/react-router-dom/es/generatePath.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/generatePath.js",
+      "name": "./node_modules/react-router-dom/es/generatePath.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router-dom": [
+    {
+      "id": "./node_modules/react-router-dom/es/index.js",
+      "name": "./node_modules/react-router-dom/es/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/index.js",
+      "name": "./node_modules/react-router-dom/es/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./matchPath": [
+    {
+      "id": "./node_modules/react-router-dom/es/matchPath.js",
+      "name": "./node_modules/react-router-dom/es/matchPath.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/matchPath.js",
+      "name": "./node_modules/react-router-dom/es/matchPath.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./withRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/withRouter.js",
+      "name": "./node_modules/react-router-dom/es/withRouter.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router-dom/es/withRouter.js",
+      "name": "./node_modules/react-router-dom/es/withRouter.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/MemoryRouter": [
+    {
+      "id": "./node_modules/react-router/es/MemoryRouter.js",
+      "name": "./node_modules/react-router/es/MemoryRouter.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/MemoryRouter.js",
+      "name": "./node_modules/react-router/es/MemoryRouter.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/Prompt": [
+    {
+      "id": "./node_modules/react-router/es/Prompt.js",
+      "name": "./node_modules/react-router/es/Prompt.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Prompt.js",
+      "name": "./node_modules/react-router/es/Prompt.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/Redirect": [
+    {
+      "id": "./node_modules/react-router/es/Redirect.js",
+      "name": "./node_modules/react-router/es/Redirect.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Redirect.js",
+      "name": "./node_modules/react-router/es/Redirect.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/Route": [
+    {
+      "id": "./node_modules/react-router/es/Route.js",
+      "name": "./node_modules/react-router/es/Route.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Route.js",
+      "name": "./node_modules/react-router/es/Route.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/Router": [
+    {
+      "id": "./node_modules/react-router/es/Router.js",
+      "name": "./node_modules/react-router/es/Router.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Router.js",
+      "name": "./node_modules/react-router/es/Router.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/StaticRouter": [
+    {
+      "id": "./node_modules/react-router/es/StaticRouter.js",
+      "name": "./node_modules/react-router/es/StaticRouter.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/StaticRouter.js",
+      "name": "./node_modules/react-router/es/StaticRouter.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/Switch": [
+    {
+      "id": "./node_modules/react-router/es/Switch.js",
+      "name": "./node_modules/react-router/es/Switch.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Switch.js",
+      "name": "./node_modules/react-router/es/Switch.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/generatePath": [
+    {
+      "id": "./node_modules/react-router/es/generatePath.js",
+      "name": "./node_modules/react-router/es/generatePath.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/generatePath.js",
+      "name": "./node_modules/react-router/es/generatePath.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/matchPath": [
+    {
+      "id": "./node_modules/react-router/es/matchPath.js",
+      "name": "./node_modules/react-router/es/matchPath.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/matchPath.js",
+      "name": "./node_modules/react-router/es/matchPath.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react-router/es/withRouter": [
+    {
+      "id": "./node_modules/react-router/es/withRouter.js",
+      "name": "./node_modules/react-router/es/withRouter.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/withRouter.js",
+      "name": "./node_modules/react-router/es/withRouter.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./cjs/react.development.js": [
+    {
+      "id": "./node_modules/react/cjs/react.development.js",
+      "name": "./node_modules/react/cjs/react.development.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react/cjs/react.development.js",
+      "name": "./node_modules/react/cjs/react.development.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "react": [
+    {
+      "id": "./node_modules/react/index.js",
+      "name": "./node_modules/react/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/react/index.js",
+      "name": "./node_modules/react/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "resolve-pathname": [
+    {
+      "id": "./node_modules/resolve-pathname/index.js",
+      "name": "./node_modules/resolve-pathname/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/resolve-pathname/index.js",
+      "name": "./node_modules/resolve-pathname/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./cjs/scheduler-tracing.development.js": [
+    {
+      "id": "./node_modules/scheduler/cjs/scheduler-tracing.development.js",
+      "name": "./node_modules/scheduler/cjs/scheduler-tracing.development.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/scheduler/cjs/scheduler-tracing.development.js",
+      "name": "./node_modules/scheduler/cjs/scheduler-tracing.development.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./cjs/scheduler.development.js": [
+    {
+      "id": "./node_modules/scheduler/cjs/scheduler.development.js",
+      "name": "./node_modules/scheduler/cjs/scheduler.development.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/scheduler/cjs/scheduler.development.js",
+      "name": "./node_modules/scheduler/cjs/scheduler.development.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "scheduler": [
+    {
+      "id": "./node_modules/scheduler/index.js",
+      "name": "./node_modules/scheduler/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/scheduler/index.js",
+      "name": "./node_modules/scheduler/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "scheduler/tracing": [
+    {
+      "id": "./node_modules/scheduler/tracing.js",
+      "name": "./node_modules/scheduler/tracing.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/scheduler/tracing.js",
+      "name": "./node_modules/scheduler/tracing.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "value-equal": [
+    {
+      "id": "./node_modules/value-equal/index.js",
+      "name": "./node_modules/value-equal/index.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/value-equal/index.js",
+      "name": "./node_modules/value-equal/index.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./../../webpack/buildin/global.js": [
+    {
+      "id": "./node_modules/webpack/buildin/global.js",
+      "name": "./node_modules/webpack/buildin/global.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    },
+    {
+      "id": "./node_modules/webpack/buildin/global.js",
+      "name": "./node_modules/webpack/buildin/global.js",
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ],
+  "./Layout": [
+    {
+      "id": "./src/main/Layout.js",
+      "name": "./src/main/Layout.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    }
+  ],
+  "/Users/stepover10/Desktop/dev_stepover/About-Me/reactjs/dev-server-side-rendering/src/main/main.js": [
+    {
+      "id": "./src/main/main.js",
+      "name": "./src/main/main.js",
+      "file": "main/main.js",
+      "publicPath": "main/main.js"
+    }
+  ],
+  "undefined": [
+    {
+      "id": 0,
+      "name": null,
+      "file": "vendor/vendor.js",
+      "publicPath": "vendor/vendor.js"
+    }
+  ]
+}
