@@ -24,20 +24,7 @@ module.exports = (env, argv) => {
           test: /\.js$/,
           exclude: /node_modules/,
           use: {
-            loader: 'babel-loader',
-            options: {
-              babelrc: false,
-              presets: [
-                ['es2015', {modules: false}],
-                'react',
-              ],
-              plugins: [
-                'syntax-dynamic-import',
-                'transform-class-properties',
-                'transform-object-assign',
-                "react-loadable/babel"
-              ],
-            }
+            loader: 'babel-loader'
           },
         },
         {
@@ -77,7 +64,7 @@ module.exports = (env, argv) => {
 
     plugins: [
       new ReactLoadablePlugin({
-        filename: './dist/react-loadable.json',
+        filename: './dist/react-loadable-ssr-addon.json',
       }),
       new MiniCssExtractPlugin({filename: '[name]/[name].css'})
     ]
