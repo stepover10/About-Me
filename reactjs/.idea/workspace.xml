@@ -3,36 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="230a907b-ca31-4a57-8c68-bc9b5ec084f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/dist/0/0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/dist/1/1.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/dist/2/2.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/dist/3/3.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/dist/main/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/dist/main/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/dist/react-loadable-ssr-addon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/dist/react-loadable.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/dist/vendor/vendor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/router/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/server/AppSRR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/action/countries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/action/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/line/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/src/pages/about/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/line/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/src/pages/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/main/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/src/layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/src/layout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/src/layout/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/src/layout/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/reducers/countries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/reducers/country.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/reducers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/router/Routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/router/asyncComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/router/asyncRouter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/src/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server-side-rendering/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev-server-side-rendering/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,10 +123,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-1722" />
     <option name="y" value="-1417" />
-    <option name="width" value="2560" />
+    <option name="width" value="2033" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -183,7 +153,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547532632707" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547537279344" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -236,17 +206,17 @@
       <workItem from="1546822660144" duration="7705000" />
       <workItem from="1546839056243" duration="1440000" />
       <workItem from="1546840526600" duration="7342000" />
-      <workItem from="1546850624759" duration="79418000" />
+      <workItem from="1546850624759" duration="80351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106919000" />
+    <option name="totallyTimeSpent" value="107852000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1722" y="-1417" width="2560" height="1417" extended-state="6" />
+    <frame x="-1722" y="-1417" width="2033" height="1417" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11517077" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14565545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
