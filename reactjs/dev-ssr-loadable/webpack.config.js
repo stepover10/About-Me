@@ -38,8 +38,7 @@ module.exports = (env, argv) => {
               plugins: [
                 require('@babel/plugin-proposal-class-properties'),
                 require('@babel/plugin-proposal-object-rest-spread'),
-                require('@babel/plugin-syntax-dynamic-import'),
-                require('react-loadable/babel'),
+                require('@babel/plugin-syntax-dynamic-import')
               ],
             }
           },
@@ -100,7 +99,6 @@ module.exports = (env, argv) => {
     },
 
     plugins: [
-      new ReactLoadableSSRAddon({filename: 'react-loadable-ssr-addon.json'}),
       new MiniCssExtractPlugin({filename: '[name]/[name].css'})
     ]
   }

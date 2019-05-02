@@ -3,13 +3,12 @@ import path from "path";
 
 import React from 'react'
 import ReactDOMServer from 'react-dom/server';
+import {StaticRouter} from 'react-router-dom';
 import Loadable from 'react-loadable';
 import { getBundles } from 'react-loadable/webpack';
-import { StaticRouter } from 'react-router-dom';
+import Layout from "../src/layout/Layout";
 
-import Layout from "../src/main/Layout";
-
-const stats = require('../dist/react-loadable.json');
+const stats = require('../dist/react-loadable-ssr-addon.json');
 const app = express();
 
 app.use(express.static("../dist"));
@@ -19,7 +18,7 @@ app.get("*", (req, res) => {
 
   const modules = [];
   const context = {};
-  const reactHeaderComponent = ReactDOMServer.renderToString(
+  const reactLayoutComponent = ReactDOMServer.renderToString(
     <Loadable.Capture report={moduleName => modules.push(moduleName)}>
       <StaticRouter location={req.url} context={context}>
         <Layout />
@@ -27,19 +26,29 @@ app.get("*", (req, res) => {
     </Loadable.Capture>
   );
 
-  let bundles = getBundles(stats, modules);
-  let scripts = bundles.filter(bundle => bundle.file.endsWith('.js'));
+  // const bundles = getBundles(stats, modules);
+  // const scripts = bundles.filter(bundle => bundle.file.endsWith('.js'));
+  // const styles = bundles.css || [];
+  const bundles = getBundles(stats, [...stats.entrypoints, ...Array.from(modules)]);
+
+  const scripts = bundles.js || [];
+
 
   res.writeHead(200, {"Content-Type": "text/html"});
   res.end(`
     <!doctype html>
     <html>
-      <head>...</head>
-      <body>        
-        <div id="app">${reactHeaderComponent}</div>        
+      <head>
+          <meta charset="utf-8" />
+      </head>
+      <body>
+        
+        <div id="app">${reactLayoutComponent}</div>
+        
         ${scripts.map(script => {
             return `<script src="${script.file}"></script>`
         }).join('\n')}
+        
       </body>
     </html>
   `);
