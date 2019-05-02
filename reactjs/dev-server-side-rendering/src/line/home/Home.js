@@ -1,5 +1,11 @@
-import React, { Component } from "react";
+import React, {Component} from 'react';
 
-export default function ExampleNested() {
-  return <p>Hello from a nested loadable component!</p>;
+export default class Home extends Component {
+  render() {
+    return (
+      <div>
+        ABOUT
+      </div>
+    )
+  }
 }

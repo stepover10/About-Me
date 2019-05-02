@@ -3,9 +3,9 @@ import path from "path";
 
 import React from 'react'
 import ReactDOMServer from 'react-dom/server';
-import {StaticRouter} from 'react-router-dom';
 import Loadable from 'react-loadable';
 import { getBundles } from 'react-loadable/webpack';
+import { StaticRouter } from 'react-router-dom';
 
 import Layout from "../src/main/Layout";
 
@@ -32,19 +32,17 @@ app.get("*", (req, res) => {
 
   res.writeHead(200, {"Content-Type": "text/html"});
   res.end(`
-  <!doctype html>
-  <html>
-    <head>...</head>
-    <body>
-      
-      <div id="app">${reactHeaderComponent}</div>
-      
-      ${scripts.map(script => {
-          return `<script src="${script.file}"></script>`
-      }).join('\n')}
-    </body>
-  </html>
-`);
+    <!doctype html>
+    <html>
+      <head>...</head>
+      <body>        
+        <div id="app">${reactHeaderComponent}</div>        
+        ${scripts.map(script => {
+            return `<script src="${script.file}"></script>`
+        }).join('\n')}
+      </body>
+    </html>
+  `);
 
 });
 // todo app SSR setting END :: ================

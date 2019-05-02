@@ -1,20 +1,24 @@
 {
-  "name": "react-server-side_rendering",
-  "description": "",
-  "version": "1.0.0",
-  "private": true,
+  "name": "react-loadable",
+  "version": "5.5.0",
+  "description": "A higher order component for loading components with promises",
+  "main": "lib/index.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "repository": "thejameskyle/react-loadable",
+  "files": [
+    "babel.js",
+    "webpack.js",
+    "lib/**"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon --exec babel-node server/server.js",
-    "watch": "webpack --watch --mode=development",
-    "build": "webpack --mode=production",
-    "dev": "npm run watch | npm run server"
+    "test": "jest --coverage",
+    "build": "babel src -d lib",
+    "start": "babel-node example/server.js",
+    "prepublish": "yarn build"
   },
   "dependencies": {
-    "express": "^4.16.4",
-    "react-dom": "^16.6.3",
-    "react": "^16.6.3",
-    "react-router-dom": "^4.3.1"
+    "prop-types": "^15.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -26,18 +30,17 @@
     "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^1.0.1",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "mini-css-extract-plugin": "^0.4.5",
-    "node-sass": "^4.10.0",
-    "nodemon": "^1.18.9",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.0.1",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2"
+    "express": "^4.16.1",
+    "flow-bin": "^0.41.0",
+    "jest": "^21.2.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^3.12.0"
   },
-  "author": "",
-  "license": "ISC"
+  "peerDependencies": {
+    "react": "*"
+  }
 }
