@@ -1,48 +1,28 @@
 {
-  "name": "react-server-side_rendering",
-  "description": "",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon --exec babel-node server/server.js",
-    "watch": "webpack --watch --mode=development",
-    "build": "webpack --mode=production",
-    "dev": "npm run watch | npm run server"
-  },
-  "dependencies": {
-    "cross-fetch": "^3.0.4",
-    "express": "^4.16.4",
-    "node-fetch": "^2.6.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-loadable": "^5.5.0",
-    "react-loadable-ssr-addon": "^0.1.6",
-    "react-router-dom": "^4.3.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.1.5",
-    "@babel/node": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.2.3",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.1.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "babel-plugin-dynamic-import-node": "^2.2.0",
-    "babel-plugin-dynamic-import-webpack": "^1.1.0",
-    "css-loader": "^1.0.1",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "mini-css-extract-plugin": "^0.4.5",
-    "node-sass": "^4.10.0",
-    "nodemon": "^1.18.9",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.0.1",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2"
-  },
-  "author": "",
-  "license": "ISC"
+    "scripts": {
+        "server": "node ./server/server.js",
+        "build": "next build ./src",
+        "dev": "next ./src"
+    },
+    "dependencies": {
+        "@yolkai/next-routes": "^3.0.0",
+        "@zeit/next-sass": "^1.0.1",
+        "@zeit/next-typescript": "^1.1.1",
+        "axios": "^0.19.0",
+        "babel-plugin-webpack-alias": "^2.1.2",
+        "express": "^4.17.1",
+        "next": "^9.0.0",
+        "next-compose-plugins": "^2.2.0",
+        "next-routes": "^1.4.2",
+        "node-sass": "^4.12.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    },
+    "devDependencies": {
+        "@types/node": "^12.6.1",
+        "@types/react": "^16.8.23",
+        "@types/react-dom": "^16.8.4",
+        "babel-plugin-module-resolver": "^3.2.0",
+        "typescript": "^3.5.2"
+    }
 }

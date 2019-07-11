@@ -1,0 +1,206 @@
+#FooterWrap{
+   // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAL0lEQVQYV2NkwAHevn37nxGbHEhCWFiYEUMSJgHShFUnzDTCkshGIbuBEZcESBEAKrcTzlZLzqcAAAAASUVORK5CYII=) repeat;
+   border-top: 1px solid #e6e6e6;
+   background-color: #fafafa;
+   padding: 0 0 100px;
+
+   .f-body{
+      // width: 1024px;
+      margin: 0 auto;
+      color: #000;
+
+      .f-in-box{
+         width: 1024px;
+         margin: 0 auto;
+      }
+
+      .f-inner{
+         font-size: 13px;
+
+         .f-top{
+            /* height: 54px; */
+            /* line-height: 40px; */
+            border-bottom: 1px solid #f0f0f0;
+            margin: 0 auto 24px;
+            padding: 15px 0;
+            font-weight: 700;
+
+            b{
+               display: inline-block;
+               margin-right: 20px;
+            }
+
+            span{
+               float: right;
+               img{
+                  width: 80px;
+                  margin: -5px 0 0;
+               }
+            }
+         }
+
+         .in-a{
+            display: inline-block;
+         }
+
+         .in-b{
+            float: right;
+
+            .app{
+               //width: 60px;
+               //height: 60px;
+               //border-radius: 15px;
+               //overflow: hidden;
+               //background: #fff;
+               //padding: 11px 11px 8px 13px;
+               //box-shadow: 1px 1px 11px #f8f8f8;
+               //border: 1px solid #f2f2f2;
+
+
+               img{
+                  width: 140px;
+               }
+            }
+         }
+
+         ul{
+            li{
+               display: block;
+               vertical-align: top;
+               margin: 0 0 15px;
+
+               h1{
+                  display: inline-block;
+                  font-size: 13px;
+                  width: 100px;
+                  vertical-align: top;
+               }
+
+               .f-bx{
+                  display: inline-block;
+
+                  span{
+                     padding-right: 20px;
+                     font-weight: 200;
+                  }
+               }
+
+            }
+
+            li.info-companys{
+               float: right;
+               text-align: right;
+               padding: 0;
+
+               div{
+                  padding: 5px 10px;
+                  font-size: 11px;
+                  border-radius: 4px;
+                  margin: 0 0 4px;
+               }
+            }
+         }
+      }
+
+   }
+
+   .f-last{
+      position: relative;
+      font-size: 12px;
+      font-weight: 100;
+      padding: 20px 0;
+      line-height: 1.7;
+      //background: #000;
+      color: #000;
+
+      .address{
+         display: block;
+         width: 1024px;
+         margin: 0 auto;
+         text-align: left;
+
+         .company-option{
+            position: relative;
+            float: right;
+
+            .h-c{
+               background: #404040;
+               color: #fff;
+               padding: 3px 15px;
+               border-radius: 4px;
+               margin: -3px 0 0;
+               cursor: pointer;
+            }
+
+            .pop-c{
+               position: absolute;
+               bottom: 28px;
+               left: 0;
+               border: 1px solid #000;
+               background: #fff;
+               width: 100%;
+
+               a{
+                  display: block;
+                  text-align: center;
+                  padding: 6px;
+                  border-bottom: 1px solid #f3f3f3;
+               }
+
+            }
+
+         }
+      }
+
+      ul{
+         float: right;
+
+         li{
+            display: inline-block;
+            vertical-align: top;
+            padding: 5px 10px;
+            font-size: 11px;
+            text-align: center;
+            border-radius: 4px;
+            margin: 0 0 0 4px;
+
+            a{
+               img{
+                  width: 10px;
+                  vertical-align: middle;
+                  margin: -3px 3px 0 0px;
+               }
+            }
+         }
+      }
+   }
+
+   @media only screen and (max-width: 1026px){
+      padding: 0 40px 100px;
+      .f-body{
+         .f-top, .f-in-box{
+            width: 100%;
+         }
+         .address{
+            width: 100%;
+         }
+      }
+   }
+
+   @media only screen and (max-width: 500px){
+      padding: 0 20px 100px;
+      .f-body{
+         h1{
+            font-size: 13px !important;
+              margin: 0 0 8px;
+         }
+         .in-b{
+            display: none;
+         }
+         .f-inner ul li{
+            margin: 0 0 8px;
+         }
+      }
+   }
+
+}

@@ -1,34 +1,33 @@
-// Express
-import express from 'express';
+const path = require('path');
+const express = require("express");
+const next = require("next");
+const routes = require("../routes");
+const app = next({
+    dev: process.env.NODE_ENV !== "production",
+    dir: './src',
+});
+const handler = routes.getRequestHandler(app, ({req, res, route, query}) => {
+  app.render(req, res, route.page, query)
+})
+// const address = require("address");
 
-// React
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import App from '../client/App';
-import Html from './Html';
+app.prepare().then(() => {
 
-const app = express();
-const port = 3000;
+  const port = process.env.PORT || 3000;
+  const server = express();
 
-app.get('/', function (req, res, next) {
+  server.use(express.static(path.join(__dirname,'../.next')));
+  server.use(express.static(path.join(__dirname,'../images')));
+  server.use(express.static(path.join(__dirname,'../fonts')));
+  //server.use(handler);
 
-  let preloadState = {
-    text: 'Server-Side Rendering'
-  };
+  server.get('*', (req, res) => {
+		return handler(req, res)
+	})
 
-  let renderProps = {
-    preloadState: `window.__PRELOADED_STATE__ = ${JSON.stringify(preloadState).replace(/</g, '\\u003c')}`
-  };
-
-  ReactDOMServer.renderToNodeStream(
-    <Html {...renderProps}>
-      <App data={preloadState}/>
-    </Html>
-  ).pipe(res);
+  server.listen(port, (err) => {
+    if (err) throw err;
+    console.log(`ENV : ${process.env.WILD_ENV} Ready on http://localhost:${port}`);
+  });
 
 });
-
-app.listen(port, () => {
-  console.log('http://localhost:1234')
-});
-
