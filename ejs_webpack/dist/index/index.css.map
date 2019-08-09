@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Users/stepover10/Desktop/DocpleRenewalEJS/src/index/index.scss"],"names":[],"mappings":"AAAA,MACE,UAAU,CADZ,QAGI,UAAW","file":"index.css","sourcesContent":[".test{\n  color:#000;\n  b{\n    color: blue;\n  }\n}\n"]}
