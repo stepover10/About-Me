@@ -7,9 +7,7 @@
 현재 ReactJS를 즐겨 사용하고 있으며, 프론트엔드 개발자의 최고가 되고자 노력합니다.<br>
 사용자가 쉽게 쓸수있는 개발을 좋아하며 개발을 할때 UI/UX까지 고려하면서 개발을 합니다.<br>
 
-E-Mail - stepover10@gmail.com<br>
-Resume - https://github.com/stepover10/About-Me/raw/master/etc/FrontEnd_Developer_YooChanHyun.pdf
-
+E-Mail - stepover10@gmail.com
 
 ## 기술
 ![ims_main](/etc/skills.png)
