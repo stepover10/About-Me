@@ -57,33 +57,28 @@ export default class ActionStore {
 > **inject/observer 보내기**
 : Action를 보내는 역할
 ```javascript
-// inject를 통해 action.js와 연결하여 함수를 정의
-// observer는 클래스를 연결하는 함수
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { userAction } from '../store/actions'
+import { observer, inject } from 'mobx-react';
 
+@inject( stores => ({
+    increase: stores.store.increase,
+}))
+@observer
 class ReChecker1 extends Component{
-    reduxTestFun(){
-        this.props.userAction('전달성공')
+
+    mobxTestFun(i){
+        this.props.increase('전달성공')
     }
 
     render(){
         return(
-            <div onClick={this.reduxTestFun.bind(this)}>
+            <div onClick={ ()=>this.mobxTestFun('전달') }>
                 ReChecker1
             </div>
         )
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        userAction: (a,b) => dispatch( userAction(a,b) ),
-    }
-}
-
-ReChecker1 = connect(undefined, mapDispatchToProps)(ReChecker1);
 export default ReChecker1
 ```
 
