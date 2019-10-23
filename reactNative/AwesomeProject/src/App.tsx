@@ -1,154 +1,116 @@
 import * as React from  'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  Image,
-  FlatList,
-  ScrollView,
-  StatusBar,
-  Dimensions,
-  Button,
-  TextInputComponent,
-  TextInput
-} from 'react-native';
-import styled from 'styled-components';
-import ViewInsert from 'components/ViewInsert';
-import HeaderView from 'containers/header/HeaderView';
+import { View, Text, ActivityIndicator, ProgressViewIOS, Image, Dimensions } from 'react-native';
+import Main from './containers/main/Main';
+
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import BHC_eventPage from 'event/BHC_eventPage'
 
 const win = Dimensions.get('window');
 
-export default class HelloWorldApp extends React.Component<any> {
+class HelloWorldApp extends React.Component<any> {
 
-  renderSeparator = () => {
-        return (
-            <View
-                style={{
-                    height: 1,
-                    width: "100%",
-                    backgroundColor: "#000",
-                }}
-            />
-        );
-    };
+  static navigationOptions = {
+    header: null
+  };
 
-  _onPressButton = () => {
+  state = {
+    loaded: false,
+    progress: 0
+  }
+
+  componentDidMount(){
+    this._testProgress();
+  }
+
+  _onPressButton = (): void => {
     alert('You tapped the button!')
   }
 
+  _testProgress = (): void => {
+    const _setInterval = setInterval(() => {
+      const { progress, loaded } = this.state;
+      if ( progress > 1 ) {
+        console.log('_set')
+        clearInterval(_setInterval)
+      }
+      this.setState({
+        loaded: progress >= 1 ? true : false,
+        progress: progress + 0.01
+      })
+    }, 100) 
+  }
+
   render() {
+    const { loaded, progress } = this.state;
+    if ( !loaded ) return ( 
+      <View style={{
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        // backgroundColor: '#FFDE45'
+      }}>
+        <View style={{ flex: 1 }}>
+          <View style={{
+            flex: 1,
+            marginTop: '20%',
+            marginBottom: '50%'
+          }}>
+            <Image
+              style={{
+                alignSelf: 'stretch',
+                width: win.width,
+                height: 400,
+              }} 
+              source={require('images/imgTutorial.png')} 
+            />
+          </View>
+         
+          <View style={{
+            flex: 1,
+            padding: 20, 
+            justifyContent: 'center',
+            marginTop: 15,
+          }}>
+            {/* <ActivityIndicator size="small" color="#ddd" /> */}
+            {/* <ActivityIndicator size="small" color="#000" />             */}
+            <ProgressViewIOS progress={progress} progressTintColor="red" />
+
+            <View style={{
+              flex: 1,
+              alignItems: 'center',
+              marginTop: 15,
+            }}>
+              <Text style={{
+                fontSize: 22, 
+                fontWeight: 'bold',
+                textAlign:'center',                
+              }}>
+                걸을수록 돈이 쌓이는{"\n"}
+                만보기앱 캐시워크 입니다.
+              </Text>
+            </View>
+
+          </View>
+          <View style={{ flex: 1, alignItems: 'center' }}>
+            <Text style={{fontSize: 12}}>
+              CASHWALK.CO
+            </Text>
+          </View>
+          
+        </View>
+      </View> 
+    );
 
     return (
-      <>
-        {/*<View
-          style={{
-              width: "100%",
-              height: 21,
-              // backgroundColor: "#F6D036"
-        }}>
-          <StatusBar
-            // translucent
-            // animated
-            // backgroundColor="blue"
-            // barStyle="light-content"
-          />
-        </View>*/}
-
-        <StatusBar barStyle="light-content" />
-        <View style={{flex: 1}}>
-          <ScrollView style={{flex:1}}>
-            <View style={{flex: 1}}>
-
-              {/*<HeaderView />*/}
-
-              <View style={{flex: 1}}>
-
-
-                <View style={{flexDirection: 'row'}}>
-                  <Image
-                    source={require('../images/sample.jpg')}
-                    style={styles.image}
-                  />
-                </View>
-
-
-                <View style={{
-                  padding: 20,
-                  elevation: 30,
-                  shadowColor: 'black',
-                  shadowOffset: {width: 0, height: -10},
-                  shadowOpacity: 0.3,
-                  shadowRadius: 1 * 5,
-                  backgroundColor : 'white'
-                }}>
-
-                  <View style={{
-                    // backgroundColor : 'white'
-                  }}>
-                    <Text style={styles.header}>환영합니다!!</Text>
-                    <Text style={styles.sub}>
-                      가입하시면
-                      <Text style={styles.subBold}> 캐시닥</Text> 이
-                      치킨을 드려요!!
-                    </Text>
-                    <Text style={styles.sub}>치킨은 BHC</Text>
-
-                    <ButtonOnPress>
-                      <Button
-                        onPress={this._onPressButton}
-                        title="Press Me"
-                        color="#fff"
-                      />
-                    </ButtonOnPress>
-
-                  </View>
-
-                </View>
-
-
-              </View>
-            </View>
-          </ScrollView>
-        </View>
-      </>
+      <Main { ...this.props}/>
     );
   }
 }
 
-const ButtonOnPress = styled.View`	
-	flex-direction: row;
-	justify-content: center;
-	background: #000;
-	margin-top: 10px;
-`;
+const ReactNavigationRoutes = createStackNavigator({
+    Home: HelloWorldApp,
+    EventPage: BHC_eventPage,
+})
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  header: {
-    marginBottom: 10,
-    fontWeight: 'bold',
-    fontSize: 30
-  },
-  sub: {
-    marginTop: 2,
-    marginBottom: 2,
-    fontSize: 18,
-    fontWeight: '100'
-  },
-  subBold: {
-    fontWeight: 'bold',
-  },
-  item: {
-    padding: 10,
-    fontSize: 18,
-    height: 44,
-  },
-  image: {
-    flex: 1,
-    aspectRatio: 1,
-    width: null
-  }
-});
+export default createAppContainer(ReactNavigationRoutes)

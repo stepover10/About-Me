@@ -7,6 +7,7 @@ module.exports = {
         root: ["./src"],
         extensions: [".tsx", "ts"],
         alias: {
+          "commoness": "./src/commoness",
           "components": "./src/components",
           "images": "./images"
         }
