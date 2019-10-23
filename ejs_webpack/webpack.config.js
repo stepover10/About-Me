@@ -5,25 +5,24 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const glob = require('glob');
 const entry = require('webpack-glob-entry')
-
-
 const PATH_SOURCE = path.join(__dirname, '/src');
 const PATH_BUILD = path.join(__dirname, '/dist');
-
 
 const entryListGlob = () => {
   let lists = {}
 
   let entrySource = {}
   glob.sync('./src/**/*.js').reduce(function(obj, el){
-    entrySource[path.parse(el).name] = [el];
+    let conver = el.replace('./src/', '/');
+    entrySource[conver] = [el];
   },{})
 
   glob.sync('./src/**/*.scss').reduce(function(obj, el){
+    let conver = el.replace('./src/', '/');
     if ( entrySource[path.parse(el).name] ) {
-      entrySource[path.parse(el).name].push(el)
+      entrySource[conver].push(el)
     } else {
-      entrySource[path.parse(el).name] = (el);
+      entrySource[conver] = (el);
     }
   },{});
 
@@ -48,7 +47,12 @@ module.exports = (env, argv) => {
         }, {
           test: /\.s?css$/,
           use: [
-            MiniCssExtractPlugin.loader,
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                publicPath: '../'
+              }
+            },
             { loader: "css-loader", options: { sourceMap: isDevelopmentMode } },
             { loader: "sass-loader", options: { sourceMap: isDevelopmentMode } }
           ]
@@ -61,17 +65,17 @@ module.exports = (env, argv) => {
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.scss', '.json'],
     },
 
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: '[name].js',
+      chunkFilename: '[name].[chunkhash].chunk.js',
+    },
+
     plugins: [
-      new MiniCssExtractPlugin({
-        filename: '[name]/[name].css'
+      new MiniCssExtractPlugin({        
+        filename: '[name].css',
       })
     ],
-
-    output: {
-      path: PATH_BUILD,
-      filename: '[name]/[name].js',
-      chunkFilename: '[name]/[name].[chunkhash].chunk.js',
-    },
 
     optimization: {
       splitChunks: {

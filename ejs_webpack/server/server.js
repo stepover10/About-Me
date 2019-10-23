@@ -1,24 +1,22 @@
 const path = require('path');
-const express = require("express");
+const express = require('express');
 const app = express();
-
-
-
-app.use( express.static(path.join(__dirname,'../dist')) );
-
+const expressLayouts = require('express-ejs-layouts');
+　
+app.set('views', [path.join(__dirname, '../src')]);
 app.set('view engine', 'ejs');
-app.set('views', './src');
-
-
-
+　
+// ejs-layouts setting
+app.set('layout', 'layout/layout');
+app.set('layout extractScripts', true);
+app.use(expressLayouts);
+　
 app.get('/', (req, res) => {
-  res.render('index/index');
+    res.render('index/index.ejs')
 });
 
-app.get('/header', (req, res) => {
-  res.render('header/header');
+app.get('/community', (req, res) => {
+  res.render('community/community.ejs')
 });
 
-app.listen(8888, () => {
-  console.log("START SERVER : 8888")
-})
+app.listen(8888);
