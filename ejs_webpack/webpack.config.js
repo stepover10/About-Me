@@ -14,11 +14,13 @@ const entryListGlob = () => {
   let entrySource = {}
   glob.sync('./src/**/*.js').reduce(function(obj, el){
     let conver = el.replace('./src/', '/');
+    conver = conver.replace('.js', '');
     entrySource[conver] = [el];
   },{})
 
   glob.sync('./src/**/*.scss').reduce(function(obj, el){
     let conver = el.replace('./src/', '/');
+    conver = conver.replace('.scss', '');
     if ( entrySource[path.parse(el).name] ) {
       entrySource[conver].push(el)
     } else {
